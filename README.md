@@ -91,9 +91,13 @@ Reports and Logs:
 
 all these found in RUN folder in respective process steps as shown below;
 
-![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/44169b9d-a4a0-4645-a7b5-8ffff6ecabc7)
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/8589f75d-1273-45ab-96e3-bdbef66e8ed8)
 
-To calculate the flop ratio, I used the following formula
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/b86016e0-c6e6-4a64-8752-411e537977da)
+
+
+To calculate the flop ratio after tech map and opt
 
 
 Flop ratio = # of D Flipflops / Total # of cells
@@ -105,10 +109,28 @@ Number of cells = 9541,
 Flop ratio = 1596/9541 = 0.1673 = 16.73%
 
 
+STA 
+----
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/8a4c4e81-76da-4aaa-9ebd-c987a31f7930)
 
+min(reg2reg)
 
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/3fd0e10b-718b-43ec-bf27-cc5cb38f73cb)
 
+max(reg2reg)
 
-
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/51332211-2966-4a1f-ac6d-625d662e39e7)
       
-      
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/50576b87-dead-4de4-90de-22414c28136e)     
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/c7a60547-ca1d-4063-8390-b00bc55d5334)
+
+
+Power:
+----
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/0c8608e9-f54b-495a-a91c-ab0856e2cc70)
+
+
+
+
