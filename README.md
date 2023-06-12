@@ -29,15 +29,25 @@
 
 Check dependencies 
       git --version
+      
       docker --version
+     
       python3 --version
+      
       python3 -m pip --version
+      
       make --version
+      
       python3 -m venv -h
 
 Below steps installs PDKs and Tools
+      
       cd $HOME
+      
       git clone https://github.com/The-OpenROAD-Project/OpenLane
+      
       cd OpenLane
+      
       make
+      
       make test
