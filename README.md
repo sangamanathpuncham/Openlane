@@ -27,7 +27,9 @@
       
       docker run hello-world
 
-Check dependencies 
+Check dependencies
+----
+      
       git --version
       
       docker --version
@@ -41,6 +43,7 @@ Check dependencies
       python3 -m venv -h
 
 Below steps installs PDKs and Tools
+---
       
       cd $HOME
       
