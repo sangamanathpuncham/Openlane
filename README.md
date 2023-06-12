@@ -61,9 +61,29 @@ Invoke OpenLane
       ./flow.tcl -interactive
       package require openlane 0.9
 
-Without interactive switch the tool is in automate mode.      
+Without interactive switch the tool is in automate mode.   
+
+Prepare Design:
+-----
+
+      prep -design picorv32a
       
+To prepare the design, I used the following command (designs/picorv32a contains the verilog file, .sdc file, needed PDK, and config.json that has configurations for the design that      
+
+will overwrite the default OpenLane settings. When the design is prepared, the LEF files are merged, and a "runs" directory is created inside the picorv32a directory, and inside it a    
+
+directory with the current date is created. Inside that directory, all folder structures required by OpenLanes are present empty, except for temp folder. temp folder has the merged LEF   
+
+files. Note that when synthesis is performed for example a file will be created inside the results/synthesis directory. Inside the runs/<RUN_today_date> directory there is a             
+
+config.tcl file which contains the default OpenLane configuration settings, and it is important to check whether our modifications are reflected in it):
       
+Synthesis:
+----
+
+      run_synthesis
+      
+It will will do the all the synthesis steps (generic,mapping( and optimization)
       
       
       
