@@ -54,3 +54,18 @@ Below steps installs PDKs and Tools
       make
       
       make test
+      
+Invoke OpenLane
+----
+      make mount
+      ./flow.tcl -interactive
+      package require openlane 0.9
+
+Without interactive switch the tool is in automate mode.      
+      
+      
+      
+      
+      
+      
+      
