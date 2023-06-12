@@ -86,6 +86,29 @@ Synthesis:
 It will will do the all the synthesis steps (generic,mapping and optimization)
       
       
-      
+Reports and Logs:
+---
+
+all these found in RUN folder in respective process steps as shown below;
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/44169b9d-a4a0-4645-a7b5-8ffff6ecabc7)
+
+To calculate the flop ratio, I used the following formula
+
+
+Flop ratio = # of D Flipflops / Total # of cells
+
+dfxtp_2 = 1596,
+
+Number of cells = 9541,
+
+Flop ratio = 1596/9541 = 0.1673 = 16.73%
+
+
+
+
+
+
+
       
       
