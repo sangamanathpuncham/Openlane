@@ -83,7 +83,7 @@ Synthesis:
 
       run_synthesis
       
-It will will do the all the synthesis steps (generic,mapping and optimization)
+It will do the all the synthesis steps (generic,mapping and optimization)
       
       
 Reports and Logs:
