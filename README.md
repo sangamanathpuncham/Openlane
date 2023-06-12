@@ -55,7 +55,7 @@ Below steps installs PDKs and Tools
       
       make test
       
-Invoke OpenLane
+Invoke OpenLane ( PICORV32 RTL TO GDSII)
 ----
       make mount
       ./flow.tcl -interactive
