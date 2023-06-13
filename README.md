@@ -143,11 +143,11 @@ Chip-floor Planning:
 2)Define the location of prepalce cells:
 ----
 
-*Some cells in the design are repeatedly using so we need fix the location PNR tool will not optimize or not alert the location
+*Some cells in the design are repeatedly using so we need fix the location so PNR tool will not optimize or not alert the location
 
 *ex:memory,clock gating cell,comparator and mux.
 
-*arrangement of these IP in chip core is called floorplanning
+*arrangement of these IP in  core is called floorplanning
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/0b95ea2e-51ef-4a03-b632-f3df29d3764c)
 
