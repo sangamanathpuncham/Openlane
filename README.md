@@ -158,6 +158,15 @@ Chip-floor Planning:
 3)Power Planning:
 ----
 
+In order to distrubute the power required range to all cells present in the core by PG mesh shown below
+
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/1e9df759-13a9-4e4e-aa91-d808a308e81d)
+
+4)Pin-Placement
+---
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/bad972db-064c-40b6-b435-a74bdad8e846)
+
 
 
 
