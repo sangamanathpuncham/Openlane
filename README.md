@@ -131,6 +131,12 @@ Power:
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/0c8608e9-f54b-495a-a91c-ab0856e2cc70)
 
+Chip-floor Planning:
+----
+1)Defining the hieght and width of the core 
+
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/f2bbf23c-fa27-4709-b6dd-d4dcc8c7e13c)
 
 
 
