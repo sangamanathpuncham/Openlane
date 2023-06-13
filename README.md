@@ -136,7 +136,6 @@ Chip-floor Planning:
 1)Defining the hieght and width of the core 
 ----
 
-
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/f2bbf23c-fa27-4709-b6dd-d4dcc8c7e13c)
 
 
@@ -160,16 +159,27 @@ Chip-floor Planning:
 
 In order to distrubute the power required range to all cells present in the core by PG mesh shown below
 
-
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/1e9df759-13a9-4e4e-aa91-d808a308e81d)
 
 4)Pin-Placement
 ---
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/bad972db-064c-40b6-b435-a74bdad8e846)
 
+floor-plan(PICORV32)
+----
+
+Run the following commond for floorplan. The results can be found in OpenLane/designs//RUN_*/runs):
+
+run_floorplan
+
+default openline system setting:
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/5a7f494e-619e-4e40-9728-cc5c125abc01)
 
 
+Note that some of the floorplan switches (can be included with the command above) are FP_CORE_UTIL (floorplan core utilization), FP_ASPECT_RATIO (floorplan aspect ratio), FP_CORE_MARGIN (Core to die margin area), FP_IO_MODE (defines pin configurations: 1 = equidistant and 0 = not equidistant), FP_CORE_VMETAL (vertical metal layer), and FP_CORE_HMETAL (horizontal metal layer). The default values of these are defined in OpenLane/configuration/floorplan.tcl. In order to overwite these, we can define those switches in OpenLane/designs//config.json. Note that in OpenLane, horizontal and vertical metal are one value added to the value we specify.
 
+To view the layout of the floorplan in magic, I used the command below in the results/floorplan directory (note that in my case the pdk was previously downloaded on my desktop in the open_pdks directory):
 
 
 
