@@ -170,7 +170,7 @@ floor-plan(PICORV32)
 
 Run the following commond for floorplan. The results can be found in OpenLane/designs//RUN_*/runs):
 
-run_floorplan
+      run_floorplan
 
 default openline system setting:
 
