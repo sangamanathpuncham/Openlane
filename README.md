@@ -181,7 +181,7 @@ Note that some of the floorplan switches (can be included with the command above
 
 To view the layout of the floorplan in magic, I used the command below in the results/floorplan directory (note that in my case the pdk was previously downloaded on my desktop in the open_pdks directory):
 
-      magic -T /home/sangamanath/Desktop/vlsi/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read picorv32.def &
+      magic -T read /home/sangamanath/Desktop/vlsi/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read picorv32.def &
      
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/cb2c669c-044a-47e7-9c7f-e90359ab1c81)
 
