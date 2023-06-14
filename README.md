@@ -131,15 +131,15 @@ Power:
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/0c8608e9-f54b-495a-a91c-ab0856e2cc70)
 
-Chip-floor Planning:
+1)Chip-floor Planning:
 ----
-1)Defining the hieght and width of the core 
+Defining the hieght and width of the core 
 ----
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/f2bbf23c-fa27-4709-b6dd-d4dcc8c7e13c)
 
 
-2)Define the location of prepalce cells:
+Define the location of prepalce cells:
 ----
 
 *Some cells in the design are repeatedly using so we need fix the location so PNR tool will not optimize or not alert the location
@@ -154,14 +154,14 @@ Chip-floor Planning:
 
 *Adding the decoupling cap to provide the to boost the macro
 
-3)Power Planning:
+Power Planning:
 ----
 
 In order to distrubute the power required range to all cells present in the core by PG mesh shown below
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/1e9df759-13a9-4e4e-aa91-d808a308e81d)
 
-4)Pin-Placement
+Pin-Placement
 ---
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/bad972db-064c-40b6-b435-a74bdad8e846)
 
@@ -192,6 +192,12 @@ it will provide the layer of the highlighted object. The standard cells can be f
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/16239e6b-b1fd-47a0-8ca1-3235e964c43c)
 
 
+2)Placement:
+-----
+
+Placement of the standard cells (global and Detailed)
+
+Based on wire lenght and capacitance to insert the repeater(opt placement)
 
 
 
