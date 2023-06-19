@@ -181,15 +181,17 @@ Note that some of the floorplan switches (can be included with the command above
 
 To view the layout of the floorplan in magic, I used the command below in the results/floorplan directory (note that in my case the pdk was previously downloaded on my desktop in the open_pdks directory):
 
-      magic -T read /home/sangamanath/Desktop/vlsi/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read picorv32.def &
+      magic -T /home/sangamanath/Desktop/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.min.lef def read picorv32.def &
      
-![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/cb2c669c-044a-47e7-9c7f-e90359ab1c81)
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/52bc73a0-c110-4e49-8256-923efebae8b3)
+
 
 After zooming in (left click, right click, z), below is the obtained screenshots (note that when we highlight (s after positioning the cursor), we can type "what" in the tkcon window and 
 
 it will provide the layer of the highlighted object. The standard cells can be found on left bottom corner of the layout, as floorplan does not place those):
 
-![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/16239e6b-b1fd-47a0-8ca1-3235e964c43c)
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/81471070-06b6-4c20-a04d-3e62944669d3)
+
 
 
 2)Placement:
