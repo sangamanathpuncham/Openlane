@@ -201,6 +201,16 @@ Placement of the standard cells (global and Detailed)
 
 Based on wire lenght and capacitance to insert the repeater(opt placement)
 
+CHECK_LIGALITY:
+
+row_check
+site_check
+power_check
+placed_check
+edge_check
+overlap_check
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/fcd6881f-f60b-4383-9859-98bd6ce8eb38)
 
 
 
