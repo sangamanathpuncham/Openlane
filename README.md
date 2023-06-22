@@ -236,6 +236,8 @@ fix if any timming voilations.in OpenSTA tool
 
 CTS
 --
+      run_cts
+
 MIN
 ---
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/a4c12e2f-6f34-4958-b717-8b638da13906)
