@@ -219,6 +219,18 @@ overlap_check
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/fcd6881f-f60b-4383-9859-98bd6ce8eb38)
 
+Pre-STA with OpenSTA tool with after floorplan or placement netlist:
+-----
 
+Note that each time a change is done in OpenLane, the netlist (.v) with same name gets updated, and hence OpenSTA must be invoked again to reflect the salck of the applied changes (that is why it is an iterative approach). Now if changes for timing where done within OpenSTA (like upsizing buffers), we need to reflect those to the OpenLane tool and the way we do this is via an echo the new timing: use "write_verilog" command in OpenSTA dumping file in the results/synthesis directory. Then rerun the synthesis, floorplan and placement again.
 
+fix if any timming voilations.in OpenSTA tool
+
+1)fanout
+2)pincap
+3)slew
+4)upsize/downsize
+
+CTS
+--
 
