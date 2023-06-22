@@ -227,10 +227,33 @@ Note that each time a change is done in OpenLane, the netlist (.v) with same nam
 fix if any timming voilations.in OpenSTA tool
 
 1)fanout
+
 2)pincap
+
 3)slew
+
 4)upsize/downsize
 
 CTS
 --
+MIN
+---
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/a4c12e2f-6f34-4958-b717-8b638da13906)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/e549b84b-46b4-4dfe-b5a5-556040ce9cf3)
+
+MAX
+--
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/d382a405-2fde-4d69-a730-f2e9c2bd5b89)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/24149999-3714-45c1-895e-eb5ef58486d0)
+
+Reports:
+---
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/4f169352-0838-4753-9c59-5c93a2227941)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/e102d29a-56ce-450f-8d34-002418c8e5ad)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/49c81c3d-f343-4c0b-83f2-193f69c896f1)
 
