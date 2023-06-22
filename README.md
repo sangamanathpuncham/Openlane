@@ -199,6 +199,8 @@ it will provide the layer of the highlighted object. The standard cells can be f
 2)Placement:
 -----
 
+      run_placement
+
 Placement of the standard cells (global and Detailed)
 
 Based on wire lenght and capacitance to insert the repeater(opt placement)
