@@ -261,3 +261,5 @@ Reports:
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/49c81c3d-f343-4c0b-83f2-193f69c896f1)
 
+Note: My timing report is clean so i need not invoked the openroad
+----
