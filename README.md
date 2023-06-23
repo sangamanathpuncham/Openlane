@@ -262,8 +262,42 @@ Reports:
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/49c81c3d-f343-4c0b-83f2-193f69c896f1)
 
 Note: My timing report is clean so i need not to invoked the openroad
+
+Generate PDN
 ----
+
+      gen_pdn
+      it will generate the pdn in the floorplan step
+
+
 Routing:
 -----
 *Routing is based on the maze routing based on Lee's Algorithm
 
+      run_routing
+      
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/ea3e8016-0e59-4d6f-afcd-910f9456de25)
+
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/dffa8053-d371-4ba3-bad9-6225bc27d415)
+
+Post Routing:
+---
+To generate the GDSII file, I used the following commands (SPEF extraction, IR drop analysis, streaming out GDSII and generating LEF with magic, lvs, drc, antenna check, erc):
+
+run_parasitics_sta
+run_irdrop_report
+run_magic
+run_magic_spice_export
+run_lvs
+run_magic_drc
+run_antenna_check
+run_erc
+
+      magic
+
+designs/picorv32a/runs/RUN_2023.06.22_09.44.16/logs/signoff/picorv32.mag
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/a1539a58-c96f-429c-bae4-25c67bf1f0c0)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/7c2c30a0-123c-4cfb-9f3f-ff13f6e198ec)
