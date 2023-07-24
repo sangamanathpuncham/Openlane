@@ -308,3 +308,56 @@ designs/picorv32a/runs/RUN_2023.06.22_09.44.16/logs/signoff/picorv32.mag
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/a1539a58-c96f-429c-bae4-25c67bf1f0c0)
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/7c2c30a0-123c-4cfb-9f3f-ff13f6e198ec)
+
+
+
+*TCL SCRIPTING*
+------
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/0419e0c0-3f78-4efe-815f-e2e7a0891903)
+
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/fe179ba0-b227-4d6a-a2a2-6bb14dd96579)
+
+
+                  set my_work_dir = `pwd`
+
+            #---------------------------------------------------------------------#
+            #------------------------ Tool initialization ------------------------#
+            #---------------------------------------------------------------------#
+
+                  if ($#argv != 1) then 
+	            echo "Info: Please provide the csv file"
+	            exit 1
+                  endif
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/f648113b-12ac-4598-8f2d-a7b88cfa81f7)
+
+                                    if ($#argv != 1) then 
+	                              echo "Info: Please provide the csv file"
+	                              exit 1
+                                    endif
+
+                                    if (! -f $argv[1] || $argv[1] == "-help") then
+                                    if ($argv[1] != "-help") then
+                                    echo "Error:  Cannot find csv file $argv[1]. Exiting..."
+                                    exit 1
+                                    else
+                                    echo USAGE: ./sangamtcl \<csv file\>
+                                    ....
+                                    ....
+                                    endif
+                                    
+                                    else
+		                        
+                                    tclsh vsdflow.tcl $argv[1]
+
+                                    endif
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/8a29abee-be19-40f7-863d-33cfdaa1ba59)
+
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/43c494ed-e56c-41b9-b18f-4bb57a4a857c)
+
+
+
