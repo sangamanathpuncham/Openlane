@@ -367,4 +367,5 @@ designs/picorv32a/runs/RUN_2023.06.22_09.44.16/logs/signoff/picorv32.mag
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/43c494ed-e56c-41b9-b18f-4bb57a4a857c)
 
 
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/74aeae45-0833-41bc-bf68-c25ce98c4b97)
 
