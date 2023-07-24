@@ -319,23 +319,30 @@ designs/picorv32a/runs/RUN_2023.06.22_09.44.16/logs/signoff/picorv32.mag
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/fe179ba0-b227-4d6a-a2a2-6bb14dd96579)
 
+		 #!/bin/tcsh -f
 
-                  set my_work_dir = `pwd`
+  		 ......
+   		 .....
+		    
+        		set my_work_dir = `pwd`
 
-            #---------------------------------------------------------------------#
-            #------------------------ Tool initialization ------------------------#
-            #---------------------------------------------------------------------#
+       		 	#---------------------------------------------------------------------#
+			#------------------------ Tool initialization ------------------------#
+      		  	#---------------------------------------------------------------------#
 
-                  if ($#argv != 1) then 
-	            echo "Info: Please provide the csv file"
-	            exit 1
-                  endif
+              		if ($#argv != 1) then 
+		            echo "Info: Please provide the csv file"
+           		 exit 1
+              		endif         
+		
+  
+
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/f648113b-12ac-4598-8f2d-a7b88cfa81f7)
 
                                     if ($#argv != 1) then 
-	                              echo "Info: Please provide the csv file"
-	                              exit 1
+	                            echo "Info: Please provide the csv file"
+	                            exit 1
                                     endif
 
                                     if (! -f $argv[1] || $argv[1] == "-help") then
