@@ -375,8 +375,6 @@ TOOL INITIALIZATION:
 
 AUOT CREATION AND VERIFICATION OF VARIABLES:
 ------
- 
- 	#! /bin/env tclsh
 
 	set filename [lindex $argv 0]
 	package require csv
@@ -401,14 +399,53 @@ AUOT CREATION AND VERIFICATION OF VARIABLES:
 			}
 		} 
 
-		puts "\nInfo: Below are the list of initial variables and their values. User can use these variables for further debug. Use 'puts <variable name>' command to query value of below 			variables"
-		puts "DesignName = $DesignName"
-		puts "OutputDirectory = $OutputDirectory"
-		puts "NetlistDirectory = $NetlistDirectory"
-		puts "EarlyLibraryPath = $EarlyLibraryPath"
-		puts "LateLibraryPath = $LateLibraryPath"
-		puts "ConstraintsFile = $ConstraintsFile"
 
+ 
+ 	![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/5b202fad-a112-4321-8fdc-b40d5625d5b4)
+
+
+
+   			if {![file isdirectory temp]} {
+	file mkdir temp
+}
+
+if {! [file exists $EarlyLibraryPath] } {
+	puts "\nError: Cannot find early cell library in path $EarlyLibraryPath. Exiting... "
+	exit
+} else {
+	puts "\nInfo: Early cell library found in path $EarlyLibraryPath"
+}
+
+
+if {! [file exists $LateLibraryPath]} {
+        puts "\nError: Cannot find late cell library in path $LateLibraryPath. Exiting... "
+        exit
+} else {
+	puts "\nInfo: Late cell library found in path $LateLibraryPath"
+}
+
+if {![file isdirectory $OutputDirectory]} {
+	puts "\nInfo: Cannot find output directory $OutputDirectory. Creating $OutputDirectory"
+	file mkdir $OutputDirectory
+} else {
+	puts "\nInfo: Output directory found in path $OutputDirectory"
+}
+
+if {! [file isdirectory $NetlistDirectory]} {
+	puts "\nError: Cannot find RTL netlist directory in path $NetlistDirectory. Exiting..."
+	exit	
+} else {
+	puts "\nInfo: RTL netlist directory found in path $NetlistDirectory"
+}
+
+if {! [file exists $ConstraintsFile] } {
+        puts "\nError: Cannot find constraints file in path $ConstraintsFile. Exiting... "
+        exit
+} else {
+        puts "\nInfo: Constraints file found in path $ConstraintsFile"
+}
+
+ 	
 			
 
 
