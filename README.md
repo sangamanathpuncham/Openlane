@@ -311,10 +311,16 @@ designs/picorv32a/runs/RUN_2023.06.22_09.44.16/logs/signoff/picorv32.mag
 
 
 
+
+
+
+
+
+
 *TCL SCRIPTING*
 ------
 
-TOOL INITIALIZATION:
+Tool Initialization:
 ----
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/0419e0c0-3f78-4efe-815f-e2e7a0891903)
