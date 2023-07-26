@@ -314,6 +314,9 @@ designs/picorv32a/runs/RUN_2023.06.22_09.44.16/logs/signoff/picorv32.mag
 *TCL SCRIPTING*
 ------
 
+TOOL INITIALIZATION:
+----
+
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/0419e0c0-3f78-4efe-815f-e2e7a0891903)
 
 
@@ -368,4 +371,48 @@ designs/picorv32a/runs/RUN_2023.06.22_09.44.16/logs/signoff/picorv32.mag
 
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/74aeae45-0833-41bc-bf68-c25ce98c4b97)
+
+
+AUOT CREATION AND VERIFICATION OF VARIABLES:
+------
+ 
+ 	#! /bin/env tclsh
+
+	set filename [lindex $argv 0]
+	package require csv
+	package require struct::matrix
+	struct::matrix m
+	set f [open $filename]
+	csv::read2matrix $f m , auto
+	close $f
+	set columns [m columns]
+	m add columns $columns
+	m link my_arr
+	set num_of_rows [m rows]
+	set i 0
+	while {$i < $num_of_rows} {
+		 puts "\nInfo: Setting $my_arr(0,$i) as '$my_arr(1,$i)'"
+		 if {$i == 0} {
+			 set [string map {" " ""} $my_arr(0,$i)] $my_arr(1,$i)
+		 } else {
+			 set [string map {" " ""} $my_arr(0,$i)] [file normalize $my_arr(1,$i)]
+		 }
+		  set i [expr {$i+1}]
+			}
+		} 
+
+		puts "\nInfo: Below are the list of initial variables and their values. User can use these variables for further debug. Use 'puts <variable name>' command to query value of below 			variables"
+		puts "DesignName = $DesignName"
+		puts "OutputDirectory = $OutputDirectory"
+		puts "NetlistDirectory = $NetlistDirectory"
+		puts "EarlyLibraryPath = $EarlyLibraryPath"
+		puts "LateLibraryPath = $LateLibraryPath"
+		puts "ConstraintsFile = $ConstraintsFile"
+
+			
+
+
+
+
+
 
