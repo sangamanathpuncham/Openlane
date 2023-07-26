@@ -376,77 +376,14 @@ TOOL INITIALIZATION:
 AUOT CREATION AND VERIFICATION OF VARIABLES:
 ------
 
-	set filename [lindex $argv 0]
-	package require csv
-	package require struct::matrix
-	struct::matrix m
-	set f [open $filename]
-	csv::read2matrix $f m , auto
-	close $f
-	set columns [m columns]
-	m add columns $columns
-	m link my_arr
-	set num_of_rows [m rows]
-	set i 0
-	while {$i < $num_of_rows} {
-		 puts "\nInfo: Setting $my_arr(0,$i) as '$my_arr(1,$i)'"
-		 if {$i == 0} {
-			 set [string map {" " ""} $my_arr(0,$i)] $my_arr(1,$i)
-		 } else {
-			 set [string map {" " ""} $my_arr(0,$i)] [file normalize $my_arr(1,$i)]
-		 }
-		  set i [expr {$i+1}]
-			}
-		} 
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/5b202fad-a112-4321-8fdc-b40d5625d5b4)
 
 
- 
- 	![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/5b202fad-a112-4321-8fdc-b40d5625d5b4)
+Constraints FILE creations (SDC Format)
+----
+   			
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/2da74162-cc8e-404f-81d0-ed513857face)
 
-
-
-   			if {![file isdirectory temp]} {
-			file mkdir temp
-			}
-
-			if {! [file exists $EarlyLibraryPath] } {
-			puts "\nError: Cannot find early cell library in path $EarlyLibraryPath. Exiting... "
-			exit
-			} else {
-			puts "\nInfo: Early cell library found in path $EarlyLibraryPath"
-			}
-
-
-			if {! [file exists $LateLibraryPath]} {
-       			 puts "\nError: Cannot find late cell library in path $LateLibraryPath. Exiting... "
-       			 exit
-			} else {
-			puts "\nInfo: Late cell library found in path $LateLibraryPath"
-			}
-
-			if {![file isdirectory $OutputDirectory]} {
-			puts "\nInfo: Cannot find output directory $OutputDirectory. Creating $OutputDirectory"
-			file mkdir $OutputDirectory
-			} else {
-			puts "\nInfo: Output directory found in path $OutputDirectory"
-			}
-
-			if {! [file isdirectory $NetlistDirectory]} {
-			puts "\nError: Cannot find RTL netlist directory in path $NetlistDirectory. Exiting..."
-			exit	
-			} else {
-			puts "\nInfo: RTL netlist directory found in path $NetlistDirectory"
-			}
-
-			if {! [file exists $ConstraintsFile] } {
-       			 puts "\nError: Cannot find constraints file in path $ConstraintsFile. Exiting... "
-       			 exit
-			} else {
-       			 puts "\nInfo: Constraints file found in path $ConstraintsFile"
-			}
-
- 	
-			
 
 
 
