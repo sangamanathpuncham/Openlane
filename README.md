@@ -373,7 +373,7 @@ TOOL INITIALIZATION:
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/74aeae45-0833-41bc-bf68-c25ce98c4b97)
 
 
-AUOT CREATION AND VERIFICATION OF VARIABLES:
+Creation of variables and checking the directory and present in repective path mentioned in the .csv file:
 ------
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/5b202fad-a112-4321-8fdc-b40d5625d5b4)
