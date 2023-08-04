@@ -320,6 +320,29 @@ designs/picorv32a/runs/RUN_2023.06.22_09.44.16/logs/signoff/picorv32.mag
 *TCL SCRIPTING*
 ------
 
+Baisc:
+----
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/f213b543-5a27-42ce-9d1f-1f19804fcae3)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/f3c00033-f9f8-4dbd-9201-74c588e83400)
+
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/3afd362e-48c5-44ab-8e35-aea253b150e8)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/33eaad2b-dbe2-40a2-99c1-fa4c0c20c572)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/e092a467-9332-47c6-a609-260e4107e696)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/830d3f3a-40d0-4ff0-80a5-8cf36b8dd2cf)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/9e6288b1-eea1-43fc-a0fa-d119040bcf65)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/53ccf222-6f97-4294-81a8-f8580a8c0604)
+
+![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/f02819c6-dcaa-4760-a2d5-3b14517f0d92)
+
+
+
 Tool Initialization:
 ----
 
