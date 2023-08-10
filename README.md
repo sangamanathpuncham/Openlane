@@ -421,5 +421,4 @@ Hierachy check:
 
 ![image](https://github.com/sangamanathpuncham/Openlane/assets/132802184/51bf80c7-ef02-438a-83aa-193a4a6f7255)
 
-synthesis:
-----
+
